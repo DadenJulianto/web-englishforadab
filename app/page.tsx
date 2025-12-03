@@ -207,19 +207,19 @@ export default function Home() {
               {
                 title: "Apa itu English For Adab",
                 description:
-                  "Dipandu oleh instruktur bersertifikat internasional yang memiliki pengalaman mengajar lebih dari 10 tahun.",
+                  "English for Adab merupakan sebuah program yang berupaya menghadirkan pembelajaran bahasa Inggris yang meaningful dan contextual dengan memuat adab-adab keseharian sebagai materi utama pembelajaran.",
                 icon: "👨‍🏫",
               },
               {
                 title: "Meaningfull",
                 description:
-                  "Pembelajaran yang menyenangkan dengan kombinasi speaking, listening, reading, dan writing yang seimbang.",
+                  "Pembelajaran bahasa Inggris yang meaningful, diharapkan mampu memberikan pengalaman belajar yang lebih bermakna dan menyentuh hati, bukan hanya sekedar pembelajaran grammar dan vocabularies semata.",
                 icon: "💬",
               },
               {
                 title: "Contextual",
                 description:
-                  "Setiap kelas mengintegrasikan nilai-nilai akhlak mulia dalam setiap materi pembelajaran.",
+                  "Pembelajaran bahasa Inggris yang contextual, diharapkan mampu memberikan pengalaman belajar yang lebih relevan dengan keseharian Muslim, sehingga bukan sekedar praktek berbicara tanpa substansi.",
                 icon: "✨",
               },
             ].map((item, index) => (
@@ -255,54 +255,51 @@ export default function Home() {
             {[
               {
                 name: "School Partnership",
-                duration: "12 Minggu",
-                price: "Rp 1.200.000",
+                duration: "12 Bulan",
+                price: "Rp 185.000/Siswa",
                 icon: "🏫",
                 benefits: [
-                  "Pronunciation & Listening",
-                  "Basic Grammar",
-                  "Conversational English",
-                  "2x per minggu",
-                  "Akses material selamanya",
+                  "Pelatihan Guru dan Siswa",
+                  "English For Adab Textbook",
+                  "Daily Reminder and Mutaba'ah ",
+                  "Pendampingan Program Online dan Offline",
+                  "Jika sekolah anda ingin menghadirkan pembelajaran bahasa Inggris yang meaniful dan contextual, maka program kemitraan ini bisa menjadi jawabannya.Sehingga sekolah akan memiliki lingkungan berbahasa yang aktif yang bisa menjadi program yang diunggulkan.",
                 ],
               },
               {
                 name: "Training",
-                duration: "12 Minggu",
-                price: "Rp 1.500.000",
+                duration: " 5 hari/20 sesi",
+                price: "Rp 5.000.000",
                 icon: "👨‍🏫",
                 benefits: [
-                  "Advanced Grammar",
-                  "Writing Skills",
-                  "Presentation Practice",
-                  "2x per minggu",
-                  "One-on-one sessions",
+                  "Modul + Sertifikat",
+                  "Pelatihan English for Adab yang diberikan kepada guru atau pendidik agar mampu menjadi penggerak utama berjalannya program English for Adab di sekolah.",
+                  
                 ],
               },
               {
                 name: "English Camp",
-                duration: "12 Minggu",
-                price: "Rp 1.800.000",
+                duration: " 3 / 7 / 14 hari",
+                price: "Rp 350.000/3 hari, Rp.700.000/7 hari, Rp.1.200.000/14 hari ",
                 icon: "⛺",
                 benefits: [
-                  "Business English",
-                  "Critical Thinking",
-                  "Debate & Discussion",
-                  "3x per minggu",
-                  "Sertifikat internasional",
+                  "5 sesi/hari",
+                  "Asrama",
+                  "Makan 3 kali sehari",
+                  "Modul + Sertifikat",
+                  "Topi English For Adab",
+                  "Laundry Service",
                 ],
               },
               {
                 name: "Online",
                 duration: "Fleksibel",
-                price: "Rp 150.000/sesi",
+                price: "Rp 200.000",
                 icon: "💻",
                 benefits: [
-                  "Pembelajaran personal",
-                  "Jadwal fleksibel",
-                  "Fokus sesuai kebutuhan",
-                  "Progress tracking",
-                  "Feedback berkala",
+                  "10 sesi",
+                  "Modul + Sertifikat",
+                  
                 ],
               },
             ].map((program, index) => (
