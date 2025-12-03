@@ -424,19 +424,19 @@ export default function Home() {
                 {[
                   {
                     label: "Email",
-                    value: "info@englishforadab.com",
+                    value: "hidayatullahenglish@gmail.com",
                     icon: "✉️",
-                    link: "mailto:info@englishforadab.com",
+                    link: "hidayatullahenglish@gmail.com",
                   },
                   {
                     label: "WhatsApp",
-                    value: "+62 812 3456 7890",
+                    value: "+62 812 1757 4774",
                     icon: "📱",
                     link: "https://wa.me/681217574774",
                   },
                   {
                     label: "Lokasi",
-                    value: "Jakarta, Indonesia",
+                    value: "Kediri-Pare, Indonesia",
                     icon: "📍",
                   },
                   {
