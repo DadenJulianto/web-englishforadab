@@ -468,7 +468,7 @@ export default function Home() {
                 ))}
               </div>
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/6281217574774"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 w-full block text-center py-3 rounded-lg font-bold text-white transition-all hover:shadow-lg"
