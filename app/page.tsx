@@ -291,6 +291,7 @@ export default function Home() {
               duration: "Fleksibel",
               price: "Rp 200.000",
               icon: "💻",
+              keterangan :"Jika ingin merasakan pengalaman belajar English for Adab yang flesibel, anda bisa mengikuti kelas online kami.",
               benefits: ["10 sesi", "Modul + Sertifikat"],
             },
           ].map((program, index) => (
