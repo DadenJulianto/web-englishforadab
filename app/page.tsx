@@ -251,37 +251,39 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
             Program Pembelajaran Kami
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 name: "School Partnership",
                 duration: "12 Bulan",
                 price: "Rp 185.000/Siswa",
                 icon: "🏫",
+                bg: "bg-teal-50",
                 benefits: [
                   "Pelatihan Guru dan Siswa",
                   "English For Adab Textbook",
-                  "Daily Reminder and Mutaba'ah ",
+                  "Daily Reminder and Mutaba'ah",
                   "Pendampingan Program Online dan Offline",
-                  "Jika sekolah anda ingin menghadirkan pembelajaran bahasa Inggris yang meaniful dan contextual, maka program kemitraan ini bisa menjadi jawabannya.Sehingga sekolah akan memiliki lingkungan berbahasa yang aktif yang bisa menjadi program yang diunggulkan.",
+                  "Jika sekolah anda ingin menghadirkan pembelajaran bahasa Inggris yang meaniful dan contextual...",
                 ],
               },
               {
                 name: "Training",
-                duration: " 5 hari/20 sesi",
+                duration: "5 hari/20 sesi",
                 price: "Rp 5.000.000",
                 icon: "👨‍🏫",
+                bg: "bg-white",
                 benefits: [
                   "Modul + Sertifikat",
-                  "Pelatihan English for Adab yang diberikan kepada guru atau pendidik agar mampu menjadi penggerak utama berjalannya program English for Adab di sekolah.",
-                  
+                  "Pelatihan English for Adab untuk guru agar menjadi penggerak utama program.",
                 ],
               },
               {
                 name: "English Camp",
-                duration: " 3 / 7 / 14 hari",
-                price: "Rp 350.000/3 hari, Rp.700.000/7 hari, Rp.1.200.000/14 hari ",
+                duration: "3 / 7 / 14 hari",
+                price: "Rp 350.000 - Rp 1.200.000",
                 icon: "⛺",
+                bg: "bg-teal-50",
                 benefits: [
                   "5 sesi/hari",
                   "Asrama",
@@ -296,51 +298,40 @@ export default function Home() {
                 duration: "Fleksibel",
                 price: "Rp 200.000",
                 icon: "💻",
-                benefits: [
-                  "10 sesi",
-                  "Modul + Sertifikat",
-                  
-                ],
+                bg: "bg-white",
+                benefits: ["10 sesi", "Modul + Sertifikat"],
               },
             ].map((program, index) => (
               <div
                 key={index}
-                className="p-8 rounded-xl transition-all hover:shadow-xl"
-                style={{
-                  backgroundColor: index % 2 === 0 ? "#E0F7F6" : "white",
-                  borderLeft: `4px solid #008B8B`,
-                }}
+                className={`h-full p-8 rounded-xl flex flex-col border-l-4 border-[#008B8B] transition-all hover:shadow-xl ${program.bg}`}
               >
                 <div className="text-5xl mb-4">{program.icon}</div>
+
                 <h3 className="text-2xl font-bold mb-2 text-gray-900">
                   {program.name}
                 </h3>
-                <p
-                  className="text-3xl font-bold mb-4"
-                  style={{ color: "#008B8B" }}
-                >
+
+                <p className="text-3xl font-bold mb-4 text-[#008B8B]">
                   {program.price}
                 </p>
+
                 <p className="text-gray-600 mb-6 font-medium">
                   {program.duration}
                 </p>
-                <ul className="space-y-3">
+
+                <ul className="space-y-3 mb-8">
                   {program.benefits.map((benefit, i) => (
                     <li
                       key={i}
                       className="flex items-center gap-3 text-gray-700"
                     >
-                      <span style={{ color: "#FFD700" }}>✓</span>
-                      {benefit}
+                      <span className="text-yellow-400">✓</span> {benefit}
                     </li>
                   ))}
                 </ul>
-                <button
-                  className="w-full mt-8 py-3 rounded-lg font-bold transition-all"
-                  style={{ backgroundColor: "#008B8B", color: "white" }}
-                  onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.9")}
-                  onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
-                >
+
+                <button className="w-full mt-auto py-3 rounded-lg font-bold bg-[#008B8B] text-white hover:opacity-90">
                   Daftar Sekarang
                 </button>
               </div>
