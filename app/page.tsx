@@ -362,27 +362,27 @@ export default function Home() {
             {[
               {
                 title: "Workshop Bahasa Inggris",
-                image: "/1.HEIC",
+                image: "/galery/4.JPG",
               },
               {
                 title: "Speaking Practice Sesi",
-                image: "/2.HEIC",
+                image: "/galery/5.JPG",
               },
               {
                 title: "Grammar Session",
-                image: "/3.HEIC",
+                image: "/galery/6.JPG",
               },
               {
                 title: "Student Achievement",
-                image: "/4.jpg",
+                image: "/galery/1.JPG",
               },
               {
                 title: "Interactive Learning",
-                image: "/5.jpg",
+                image: "/galery/2.JPG",
               },
               {
                 title: "Sertifikat Wisuda",
-                image: "/6.jpg",
+                image: "/6.JPG",
               },
             ].map((item, index) => (
               <div
