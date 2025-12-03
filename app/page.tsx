@@ -362,27 +362,27 @@ export default function Home() {
             {[
               {
                 title: "Workshop Bahasa Inggris",
-                image: "/english-workshop-classroom.jpg",
+                image: "/1.HEIC",
               },
               {
                 title: "Speaking Practice Sesi",
-                image: "/english-speaking-practice-students.jpg",
+                image: "/2.HEIC",
               },
               {
                 title: "Grammar Session",
-                image: "/english-grammar-teaching-classroom.jpg",
+                image: "/3.HEIC",
               },
               {
                 title: "Student Achievement",
-                image: "/happy-students-english-class-success.jpg",
+                image: "/4.jpg",
               },
               {
                 title: "Interactive Learning",
-                image: "/interactive-english-learning-activities.jpg",
+                image: "/5.jpg",
               },
               {
                 title: "Sertifikat Wisuda",
-                image: "/english-certificate-graduation-ceremony.jpg",
+                image: "/6.jpg",
               },
             ].map((item, index) => (
               <div
