@@ -44,7 +44,6 @@ export default function Home() {
     element?.scrollIntoView({ behavior: "smooth" });
     setIsMenuOpen(false);
   };
-  
 
   return (
     <div className="bg-white font-sans">
@@ -189,8 +188,9 @@ export default function Home() {
             </div>
             <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
               <iframe
+                ref={videoRef}
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/ZMjK-uXhlHw?autoplay=1&mute=1"
+                src="https://www.youtube.com/embed/ZMjK-uXhlHw?mute=1" // tanpa autoplay dulu
                 title="English Learning"
                 allow="autoplay"
                 allowFullScreen
