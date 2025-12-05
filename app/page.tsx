@@ -160,8 +160,9 @@ export default function Home() {
             <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/ZMjK-uXhlHw"
+                src="https://www.youtube.com/embed/ZMjK-uXhlHw?autoplay=1&mute=1"
                 title="English Learning"
+                allow="autoplay"
                 allowFullScreen
               />
             </div>
