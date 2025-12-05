@@ -120,7 +120,6 @@ export default function Home() {
                 Gallery
               </button>
 
-
               <button
                 onClick={() => scrollToSection("contact")}
                 className="w-full px-4 py-2 rounded-lg font-medium text-gray-900 transition-all"
@@ -151,15 +150,17 @@ export default function Home() {
                 kontekstual dan jadilah duta Islam selanjutnya dengan
                 ENGLISH FOR ADAB
               </p>
-              <button
-                onClick={() => scrollToSection("programs")}
+              <a
+                href="https://drive.google.com/drive/folders/1NLZ-ud3NTK0DvOd4vWWwzq8IMIMwpKIW"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-3 rounded-full font-bold text-white text-lg transition-all hover:shadow-lg"
-                style={{ backgroundColor: "#008B8B" }}
+                style={{ backgroundColor: "#008B8B", display: "inline-block" }}
                 onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.9")}
                 onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
               >
-              Download Materi English For Adab
-              </button>
+                Download Materi English For Adab
+              </a>
             </div>
             <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
               <iframe
