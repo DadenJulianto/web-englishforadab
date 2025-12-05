@@ -120,15 +120,6 @@ export default function Home() {
                 Gallery
               </button>
 
-              {/* 🔽 Link Brosur */}
-              <a
-                href="https://drive.google.com/drive/folders/1NLZ-ud3NTK0DvOd4vWWwzq8IMIMwpKIW"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg"
-              >
-                Brosur
-              </a>
 
               <button
                 onClick={() => scrollToSection("contact")}
@@ -167,7 +158,7 @@ export default function Home() {
                 onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.9")}
                 onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
               >
-                Brosur
+              Lihat Brosur dan Book EFA
               </button>
             </div>
             <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
