@@ -390,12 +390,12 @@ export default function Home() {
               >
                 <img
                   src={item.image || "/placeholder.svg"}
-                  alt={item.title}
+                  // alt={item.title}
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-4" style={{ backgroundColor: "#E0F7F6" }}>
                   <h3 className="text-lg font-bold text-gray-900">
-                    {item.title}
+                    {/* {item.title} */}
                   </h3>
                 </div>
               </div>
