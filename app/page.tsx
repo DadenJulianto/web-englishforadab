@@ -219,13 +219,13 @@ export default function Home() {
                 title: "Meaningfull",
                 description:
                   "Pembelajaran bahasa Inggris yang meaningful, diharapkan mampu memberikan pengalaman belajar yang lebih bermakna dan menyentuh hati, bukan hanya sekedar pembelajaran grammar dan vocabularies semata.",
-                icon: "💬",
+                icon: "✨",
               },
               {
                 title: "Contextual",
                 description:
                   "Pembelajaran bahasa Inggris yang contextual, diharapkan mampu memberikan pengalaman belajar yang lebih relevan dengan keseharian Muslim, sehingga bukan sekedar praktek berbicara tanpa substansi.",
-                icon: "✨",
+                icon: "💬",
               },
             ].map((item, index) => (
               <div
