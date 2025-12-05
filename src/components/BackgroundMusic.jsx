@@ -1,34 +1,31 @@
-import { useEffect, useRef } from "react";
+"use client";
 
-export default function BackgroundMusic() {
-  const audioRef = useRef(null);
-  const isPlayed = useRef(false);
+import { useEffect, useRef, useState } from "react";
+
+export default function MusicPlayer() {
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const [started, setStarted] = useState(false);
 
   useEffect(() => {
-    const playAudio = () => {
-      if (!isPlayed.current) {
-        audioRef.current.play().catch(() => {});
-        isPlayed.current = true;
-
-        // Setelah diputar, event listener dihapus biar tidak dobel
-        window.removeEventListener("scroll", playAudio);
-        window.removeEventListener("click", playAudio);
+    const startMusic = () => {
+      if (!started && audioRef.current) {
+        audioRef.current.play();
+        setStarted(true);
       }
     };
 
-    // Mulai setelah user scroll atau klik
-    window.addEventListener("scroll", playAudio);
-    window.addEventListener("click", playAudio);
+    document.addEventListener("scroll", startMusic, { once: true });
+    document.addEventListener("click", startMusic, { once: true });
 
     return () => {
-      window.removeEventListener("scroll", playAudio);
-      window.removeEventListener("click", playAudio);
+      document.removeEventListener("scroll", startMusic);
+      document.removeEventListener("click", startMusic);
     };
-  }, []);
+  }, [started]);
 
   return (
     <audio ref={audioRef} loop>
-      <source src="/bg-music.mp3" type="audio/mpeg" />
+      <source src="/music/background.mp3" type="audio/mp3" />
     </audio>
   );
 }
