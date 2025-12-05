@@ -105,18 +105,21 @@ export default function Home() {
               >
                 Preview
               </button>
+
               <button
                 onClick={() => scrollToSection("programs")}
                 className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg"
               >
                 Program
               </button>
+
               <button
                 onClick={() => scrollToSection("gallery")}
                 className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg"
               >
                 Gallery
               </button>
+
               <button
                 onClick={() => scrollToSection("contact")}
                 className="w-full px-4 py-2 rounded-lg font-medium text-gray-900 transition-all"
@@ -124,6 +127,15 @@ export default function Home() {
               >
                 Contact
               </button>
+
+              {/* 🔽 Tombol Download Brosur */}
+              <a
+                href="/galery/brosur.pdf" // sesuaikan nama file brosurnya
+                download
+                className="w-full px-4 py-2 rounded-lg font-medium text-gray-900 text-center bg-blue-500 hover:bg-blue-600 transition-all"
+              >
+                Download Brosur
+              </a>
             </div>
           )}
         </div>
