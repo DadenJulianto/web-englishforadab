@@ -369,7 +369,7 @@ export default function Home() {
                 }}
                 className="w-full py-3 rounded-lg font-bold bg-[#008B8B] text-white hover:opacity-90"
               >
-                Daftar Sekarang
+                More Info
               </button>
             </div>
           ))}
