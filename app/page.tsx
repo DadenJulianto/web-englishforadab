@@ -37,10 +37,10 @@ export default function Home() {
                 className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg"
                 style={{ backgroundColor: "#008B8B" }}
               >
-                E
+                HE
               </div>
               <img
-                src="/public/galery/logo.png"
+                src="../public/galery/logo.png"
                 alt="English for Adab Logo"
                 className="h-10 w-auto"
               />
