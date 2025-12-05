@@ -139,13 +139,13 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Belajar Bahasa Inggris dengan
-                <span style={{ color: "#008B8B" }}> Etika</span>
+                Be The Next Ambassador of
+                <span style={{ color: "#008B8B" }}> Islam</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                English for Adab menghadirkan metode pembelajaran bahasa Inggris
-                yang menggabungkan skill bahasa dengan nilai-nilai etika dan
-                karakter yang baik.
+                Jadikan pengalaman belajar bahasa Inggris lebih bermakna dan
+                kontekstual dan jadilah duta Islam selanjutnya dengan
+                ENGLISH FOR ADAB
               </p>
               <button
                 onClick={() => scrollToSection("programs")}
@@ -186,16 +186,19 @@ export default function Home() {
               borderRight: "4px solid #FFD700",
             }}
           >
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed italic">
-              "وَمِنْ آيَاتِهِ خَلْقُ السَّمَاوَاتِ وَالْأَرْضِ وَاخْتِلَافُ
-              أَلْسِنَتِكُمْ وَأَلْوَانِكُمْ ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ
-              لِلْعَالِمِينَ"
-              <br />
-              <br />
-              “Dan di antara tanda-tanda (kebesaran)-Nya ialah penciptaan langit
-              dan bumi, serta perbedaan bahasa dan warna kulitmu. Sesungguhnya
-              pada yang demikian itu benar-benar terdapat tanda-tanda bagi
-              orang-orang yang mengetahui.”
+            <p className="text-center leading-relaxed">
+              <span className="block text-3xl md:text-4xl font-semibold text-gray-900 tracking-wide mb-4">
+                "وَمِنْ آيَاتِهِ خَلْقُ السَّمَاوَاتِ وَالْأَرْضِ وَاخْتِلَافُ
+                أَلْسِنَتِكُمْ وَأَلْوَانِكُمْ ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ
+                لِلْعَالِمِينَ"
+              </span>
+
+              <span className="block text-lg md:text-xl text-gray-700 italic">
+                “Dan di antara tanda-tanda (kebesaran)-Nya ialah penciptaan
+                langit dan bumi, serta perbedaan bahasa dan warna kulitmu.
+                Sesungguhnya pada yang demikian itu benar-benar terdapat
+                tanda-tanda bagi orang-orang yang mengetahui.”
+              </span>
             </p>
           </div>
 
