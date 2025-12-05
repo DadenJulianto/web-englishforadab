@@ -39,9 +39,11 @@ export default function Home() {
               >
                 E
               </div>
-              <span className="text-xl font-bold text-gray-900">
-                English for Adab
-              </span>
+              <img
+                src="/public/galery/logo.png"
+                alt="English for Adab Logo"
+                className="h-10 w-auto"
+              />
             </div>
 
             {/* Desktop Menu */}
