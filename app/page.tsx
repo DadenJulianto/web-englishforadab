@@ -167,7 +167,7 @@ export default function Home() {
                 onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.9")}
                 onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
               >
-                Lihat Program Kami
+                Brosur
               </button>
             </div>
             <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
