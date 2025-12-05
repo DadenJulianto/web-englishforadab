@@ -1,37 +1,35 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Home() {
+  const videoRef = useRef<HTMLIFrameElement>(null);
+  const [hasPlayed, setHasPlayed] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-useEffect(() => {
-  let audioPlayed = false;
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasPlayed) {
+            // AUTOPLAY ketika masuk viewport
+            if (videoRef.current) {
+              videoRef.current.src =
+                "https://www.youtube.com/embed/ZMjK-uXhlHw?autoplay=1&mute=1";
+              setHasPlayed(true);
+            }
+          }
+        });
+      },
+      { threshold: 0.5 } // 50% terlihat baru play
+    );
 
-  const audio = new Audio("/EFA.mp3");
-  audio.loop = true;       // musik mengulang terus
-  audio.volume = 0.5;      // volume sedang
-
-  const playAudio = () => {
-    if (!audioPlayed) {
-      audio.play().catch(() => {});
-      audioPlayed = true;
-
-      // hapus event listener setelah berhasil play
-      window.removeEventListener("scroll", playAudio);
-      window.removeEventListener("click", playAudio);
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
     }
-  };
 
-  window.addEventListener("scroll", playAudio);
-  window.addEventListener("click", playAudio);
-
-  return () => {
-    window.removeEventListener("scroll", playAudio);
-    window.removeEventListener("click", playAudio);
-  };
-}, []);
-
+    return () => observer.disconnect();
+  }, [hasPlayed]);
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -46,6 +44,7 @@ useEffect(() => {
     element?.scrollIntoView({ behavior: "smooth" });
     setIsMenuOpen(false);
   };
+  
 
   return (
     <div className="bg-white font-sans">
