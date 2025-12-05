@@ -370,7 +370,7 @@ export default function Home() {
               },
               {
                 title: "Sertifikat Wisuda",
-                image: "/6.JPG",
+                image: "galery/6.JPG",
               },
             ].map((item, index) => (
               <div
