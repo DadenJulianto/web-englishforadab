@@ -335,7 +335,7 @@ export default function Home() {
               {/* Tombol WA */}
               <button
                 onClick={() => {
-                  const phone = "6281234567890"; // Ganti dengan nomor WA Anda
+                  const phone = "6281217574774"; // Ganti dengan nomor WA Anda
                   const message = `Halo, saya ingin menanyakan program ${program.name}.`;
                   const url = `https://wa.me/${phone}?text=${encodeURIComponent(
                     message
