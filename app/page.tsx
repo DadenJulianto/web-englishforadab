@@ -36,7 +36,7 @@ export default function Home() {
               <img
                 src="/galery/logo.png"
                 alt="English for Adab Logo"
-                className="h-16 w-auto object-contain py-2"
+                className="h-20 w-auto object-contain py-2"
               />
             </div>
 
