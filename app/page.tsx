@@ -308,7 +308,7 @@ export default function Home() {
             <div
               key={index}
               className={`p-8 rounded-xl transition-all hover:shadow-xl h-full border-l-4 border-[#008B8B] 
-      ${index % 2 === 0 ? "bg-teal-50" : "bg-white"} flex flex-col`}
+        ${index % 2 === 0 ? "bg-teal-50" : "bg-white"} flex flex-col`}
             >
               <div className="text-5xl mb-4">{program.icon}</div>
 
@@ -332,7 +332,18 @@ export default function Home() {
                 ))}
               </ul>
 
-              <button className="w-full py-3 rounded-lg font-bold bg-[#008B8B] text-white hover:opacity-90">
+              {/* Tombol WA */}
+              <button
+                onClick={() => {
+                  const phone = "6281234567890"; // Ganti dengan nomor WA Anda
+                  const message = `Halo, saya ingin menanyakan program ${program.name}.`;
+                  const url = `https://wa.me/${phone}?text=${encodeURIComponent(
+                    message
+                  )}`;
+                  window.open(url, "_blank");
+                }}
+                className="w-full py-3 rounded-lg font-bold bg-[#008B8B] text-white hover:opacity-90"
+              >
                 Daftar Sekarang
               </button>
             </div>
