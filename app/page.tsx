@@ -33,11 +33,10 @@ export default function Home() {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center gap-2">
-             
               <img
                 src="/galery/logo.png"
                 alt="English for Adab Logo"
-                className="h-12 w-auto object-contain"
+                className="h-16 w-auto object-contain py-2"
               />
             </div>
 
