@@ -349,27 +349,27 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Workshop Bahasa Inggris",
+                // title: "Workshop Bahasa Inggris",
                 image: "/galery/4.JPG",
               },
               {
-                title: "Speaking Practice Sesi",
+                // title: "Speaking Practice Sesi",
                 image: "/galery/5.JPG",
               },
               {
-                title: "Grammar Session",
+                // title: "Grammar Session",
                 image: "/galery/6.JPG",
               },
               {
-                title: "Student Achievement",
+                // title: "Student Achievement",
                 image: "/galery/1.JPG",
               },
               {
-                title: "Interactive Learning",
+                // title: "Interactive Learning",
                 image: "/galery/2.JPG",
               },
               {
-                title: "Sertifikat Wisuda",
+                // title: "Sertifikat Wisuda",
                 image: "galery/6.JPG",
               },
             ].map((item, index) => (
