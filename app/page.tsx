@@ -164,7 +164,7 @@ export default function Home() {
             <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                src="https://youtu.be/ZMjK-uXhlHw?si=gZK8ZAtjhrm5tn59"
                 title="English Learning"
                 allowFullScreen
               />
