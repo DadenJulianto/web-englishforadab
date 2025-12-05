@@ -40,9 +40,9 @@ export default function Home() {
                 HE
               </div>
               <img
-                src="../public/galery/logo.png"
+                src="/galery/logo.png"
                 alt="English for Adab Logo"
-                className="h-10 w-auto"
+                className="h-12 w-auto object-contain"
               />
             </div>
 
