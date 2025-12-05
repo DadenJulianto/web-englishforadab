@@ -33,12 +33,7 @@ export default function Home() {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center gap-2">
-              <div
-                className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg"
-                style={{ backgroundColor: "#008B8B" }}
-              >
-                HE
-              </div>
+             
               <img
                 src="/galery/logo.png"
                 alt="English for Adab Logo"
